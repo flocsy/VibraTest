@@ -1,0 +1,29 @@
+<settings>
+    <setting propertyKey="@Properties.v" title="@Strings.vibrations">
+        <settingConfig type="alphaNumeric" maxLength="128"/>
+    </setting>
+    <setting propertyKey="@Properties.t" title="@Strings.tone">
+        <settingConfig type="list">
+            <listEntry value="-1">@Strings.settingsToneToneProfile</listEntry>
+            <listEntry value="0">TONE_KEY - 0</listEntry>
+            <listEntry value="1">TONE_START - 1</listEntry>
+            <listEntry value="2">TONE_STOP - 2</listEntry>
+            <listEntry value="3">TONE_MSG - 3</listEntry>
+            <listEntry value="4">TONE_ALERT_HI - 4</listEntry>
+            <listEntry value="5">TONE_ALERT_LO - 5</listEntry>
+            <listEntry value="6">TONE_LOUD_BEEP - 6</listEntry>
+            <listEntry value="7">TONE_INTERVAL_ALERT - 7</listEntry>
+            <listEntry value="8">TONE_ALARM - 8</listEntry>
+            <listEntry value="9">TONE_RESET - 9</listEntry>
+            <listEntry value="10">TONE_LAP - 10</listEntry>
+            <listEntry value="11">TONE_CANARY - 11</listEntry>
+            <listEntry value="12">TONE_TIME_ALERT - 12</listEntry>
+            <listEntry value="13">TONE_DISTANCE_ALERT - 13</listEntry>
+            <listEntry value="14">TONE_FAILURE - 14</listEntry>
+            <listEntry value="15">TONE_SUCCESS - 15</listEntry>
+            <listEntry value="16">TONE_POWER - 16</listEntry>
+            <listEntry value="17">TONE_LOW_BATTERY - 17</listEntry>
+            <listEntry value="18">TONE_ERROR - 18</listEntry>
+        </settingConfig>
+    </setting>
+</settings>

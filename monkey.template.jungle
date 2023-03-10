@@ -1,0 +1,13 @@
+project.manifest = manifest.xml
+project.typecheck = 3
+project.optimization = 2z
+
+base.sourcePath = source
+
+monkey_generator_features_memory64K = base;tone_profile
+
+monkey_generator_feature_tone_profile_min_ciq = 3.1.0
+
+monkey_generator_register = ciq_api;features
+
+monkey_generator_used_ciq_versions = 2.4.0;3.1.0

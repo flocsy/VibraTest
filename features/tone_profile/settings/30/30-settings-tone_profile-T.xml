@@ -1,0 +1,5 @@
+<settings>
+    <setting propertyKey="@Properties.T" title="@Strings.toneProfiles">
+        <settingConfig type="alphaNumeric" maxLength="128"/>
+    </setting>
+</settings>
