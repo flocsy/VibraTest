@@ -12,9 +12,10 @@ For CIQ developers: edit and try VibeProfile, ToneProfile and the built-in tones
 ## Toybox.Attention.VibeProfile
 
 You can enter your own VibeProfile:
+
 Vibe Profile: "25,2000;50,2000;100,2000" is equivalent to:
-var vibeData =
-    [
+
+    var vibeData = [
         new Attention.VibeProfile(25, 2000),
         new Attention.VibeProfile(50, 2000),
         new Attention.VibeProfile(100, 2000)
@@ -23,9 +24,10 @@ var vibeData =
 ## Toybox.Attention.ToneProfile and Toybox.Attention.Tone
 
 You can test both the built in tones: TONE_START, ... and create your own ToneProfile: 
+
 Tone Profile: "2500,250;5000,250" is equivalent to:
-var toneProfile =
-    [
+
+    var toneProfile = [
         new Attention.ToneProfile( 2500, 250),
         new Attention.ToneProfile( 5000, 250)
     ];
