@@ -35,4 +35,6 @@ Tone Profile: "2500,250;5000,250" is equivalent to:
 
 # Changelog
 
+2 (2024-02-13) add new devices
+
 1 (2023-03-10) initial version

@@ -1,5 +1,5 @@
 <strings>
-    <string id="AppName">VibraTest</string>
+    <string id="AppName">Vibe+Tone Test</string>
 
     <string id="vibrations">Vibrations (format: '{dutyCycle},{length}[;{dutyCycle},{length}...]'. i.e: '50,500;20,300')</string>
     <string id="tone">Tone</string>
