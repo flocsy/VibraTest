@@ -94,13 +94,15 @@ class VibraTestApp extends Application.AppBase {
     hidden function toneProfile(toneProfileStr as String?) as Void {}
     (:ciq_3_1_0, :tone_profile)
     hidden function toneProfile(toneProfileStr as String?) as Void {
-        var toneProfile = [] as Array<ToneProfile>;
-        var numbers = parseProfile(toneProfileStr);       
-        for (var i = 0; i < numbers.size() - 1; i += 2) {
-            toneProfile.add(new Attention.ToneProfile(numbers[i], numbers[i + 1]));
-        }
-        if (toneProfile.size() > 0 && Attention has :playTone) {
-            Attention.playTone({:toneProfile => toneProfile});
+        if (Attention has :ToneProfile && Attention has :playTone) {
+            var toneProfile = [] as Array<ToneProfile>;
+            var numbers = parseProfile(toneProfileStr);       
+            for (var i = 0; i < numbers.size() - 1; i += 2) {
+                toneProfile.add(new Attention.ToneProfile(numbers[i], numbers[i + 1]));
+            }
+            if (toneProfile.size() > 0) {
+                Attention.playTone({:toneProfile => toneProfile});
+            }
         }
     }
 }
