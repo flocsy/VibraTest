@@ -1,7 +1,4 @@
 <settings>
-    <setting propertyKey="@Properties.v" title="@Strings.vibrations">
-        <settingConfig type="alphaNumeric" maxLength="128"/>
-    </setting>
     <setting propertyKey="@Properties.t" title="@Strings.tone">
         <settingConfig type="list">
             <listEntry value="-1">@Strings.settingsToneToneProfile</listEntry>
@@ -25,5 +22,8 @@
             <listEntry value="17">TONE_LOW_BATTERY - 17</listEntry>
             <listEntry value="18">TONE_ERROR - 18</listEntry>
         </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.T" title="@Strings.toneProfiles">
+        <settingConfig type="alphaNumeric" maxLength="128"/>
     </setting>
 </settings>

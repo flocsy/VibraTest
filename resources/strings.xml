@@ -2,7 +2,10 @@
     <string id="AppName">Vibe+Tone Test</string>
 
     <string id="vibrations">Vibrations (format: '{dutyCycle},{length}[;{dutyCycle},{length}...]'. i.e: '50,500;20,300')</string>
+    <!-- <string id="noVibrations">No vibrations on device</string> -->
     <string id="tone">Tone</string>
     <string id="toneProfiles">Tone Profiles (format: '{duration},{frequency}[;{duration},{frequency}...]'. i.e: '1000,440;500,880')</string>
+    <string id="settingsToneToneProfile">Tone Profiles</string>
+    <!-- <string id="noSettingsToneToneProfile">NONE -</string> -->
     <string id="openSettings">Open the settings</string>
 </strings>

@@ -1,4 +1,5 @@
 <properties>
     <property id="v" type="string"></property>
     <property id="t" type="number">-1</property>
+    <property id="T" type="string"></property>
 </properties>

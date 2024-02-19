@@ -4,9 +4,11 @@ project.optimization = 2z
 
 base.sourcePath = source
 
-monkey_generator_features_memory64K = base;tone_profile
+monkey_generator_features_memory64K = base;tone_profile;vibrate
 
 monkey_generator_feature_tone_profile_min_ciq = 3.1.0
+monkey_generator_feature_tone_profile_has = ToneProfile
+monkey_generator_feature_vibrate_has = vibrate
 
 monkey_generator_register = ciq_api;features
 

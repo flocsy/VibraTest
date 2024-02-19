@@ -1,5 +1,5 @@
 <settings>
-    <setting propertyKey="@Properties.T" title="@Strings.toneProfiles">
+    <setting propertyKey="@Properties.v" title="@Strings.vibrations">
         <settingConfig type="alphaNumeric" maxLength="128"/>
     </setting>
 </settings>

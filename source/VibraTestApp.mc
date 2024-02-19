@@ -1,6 +1,7 @@
 import Toybox.Application;
 import Toybox.Attention;
 import Toybox.Lang;
+import Toybox.System;
 import Toybox.WatchUi;
 
 class VibraTestApp extends Application.AppBase {
@@ -23,7 +24,19 @@ class VibraTestApp extends Application.AppBase {
     }
 
     public function onSettingsChanged() as Void {
+        onSettingsChangedVibrate();
+        onSettingsChangedToneProfile();
+    }
+    (:no_vibrate)
+    hidden function onSettingsChangedVibrate() as Void {}
+    (:vibrate)
+    hidden function onSettingsChangedVibrate() as Void {
         vibrate(getConfigStr("v", null));
+    }
+    (:no_tone_profile)
+    hidden function onSettingsChangedToneProfile() as Void {}
+    (:tone_profile)
+    hidden function onSettingsChangedToneProfile() as Void {
         var tone = getConfigNumber("t", -1);
         if (tone > -1) {
             tone(tone);
@@ -32,9 +45,13 @@ class VibraTestApp extends Application.AppBase {
         }
     }
 
+    hidden function isEmpty(str as String?) as Boolean {
+        return str == null || str.length() == 0;
+    }
+
     hidden function parseProfile(str as String?) as Array<Number> {
         var result = [] as Array<Number>;
-        if (str == null || str.length() == 0) {
+        if (isEmpty(str)) {
             return result;
         }
         while (str != null && str.length() > 0) {
@@ -74,27 +91,29 @@ class VibraTestApp extends Application.AppBase {
     }
 
     hidden function vibrate(vibrationStr as String?) as Void {
-        var vibeData = [] as Array<VibeProfile>;
-        var numbers = parseProfile(vibrationStr);       
-        for (var i = 0; i < numbers.size() - 1; i += 2) {
-            vibeData.add(new Attention.VibeProfile(numbers[i], numbers[i + 1]));
-        }
-        if (vibeData.size() > 0 && Attention has :vibrate) {
-            Attention.vibrate(vibeData);
+        if (Attention has :vibrate && !isEmpty(vibrationStr)) {
+            System.println("vibrate: " + vibrationStr);
+            var vibeData = [] as Array<VibeProfile>;
+            var numbers = parseProfile(vibrationStr);       
+            for (var i = 0; i < numbers.size() - 1; i += 2) {
+                vibeData.add(new Attention.VibeProfile(numbers[i], numbers[i + 1]));
+            }
+            if (vibeData.size() > 0) {
+                Attention.vibrate(vibeData);
+            }
         }
     }
 
     hidden function tone(tone as Number) as Void {
         if (tone > -1 && Attention has :playTone) {
+            System.println("tone: " + tone);
             Attention.playTone(tone as Attention.Tone);
         }
     }
 
-    (:no_ciq_3_1_0, :no_tone_profile)
-    hidden function toneProfile(toneProfileStr as String?) as Void {}
-    (:ciq_3_1_0, :tone_profile)
     hidden function toneProfile(toneProfileStr as String?) as Void {
-        if (Attention has :ToneProfile && Attention has :playTone) {
+        if (Attention has :ToneProfile && Attention has :playTone && !isEmpty(toneProfileStr)) {
+            System.println("toneProfile: " + toneProfileStr);
             var toneProfile = [] as Array<ToneProfile>;
             var numbers = parseProfile(toneProfileStr);       
             for (var i = 0; i < numbers.size() - 1; i += 2) {
