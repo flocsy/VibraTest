@@ -1,8 +1,8 @@
-# Vibe & Tone Profile Test
+# Vibe & Tone Profile Editor
 
 ## Usage
 
-For CIQ developers: edit and try VibeProfile, ToneProfile and the built-in tones.
+This app is for CIQ developers: edit and try how the VibeProfile feels like and how the ToneProfile and the built-in tones sound like.
 
 1. Open VibraTest app on the watch
 2. Open the settings in ConnectIQ app
@@ -28,8 +28,8 @@ You can test both the built in tones: TONE_START, ... and create your own TonePr
 Tone Profile: "2500,250;5000,250" is equivalent to:
 
     var toneProfile = [
-        new Attention.ToneProfile( 2500, 250),
-        new Attention.ToneProfile( 5000, 250)
+        new Attention.ToneProfile(2500, 250),
+        new Attention.ToneProfile(5000, 250)
     ];
 
 
