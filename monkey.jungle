@@ -1,4 +1,4 @@
-# GENERATED from monkey.template.jungle by https://github.com/flocsy/garmin-dev-tools/tree/main/monkey-generator/ ©2022-2024 by flocsy
+# GENERATED from 'monkey.template.jungle' by https://github.com/flocsy/garmin-dev-tools/tree/main/monkey-generator/ ©2022-2024 by flocsy
 
 project.manifest = manifest.xml
 project.typecheck = 3
@@ -8,15 +8,18 @@ base.sourcePath = source
 
 monkey_generator_features_memory64K = base;tone_profile;vibrate
 
-monkey_generator_feature_tone_profile_min_ciq = 3.1.0
-monkey_generator_feature_tone_profile_has = ToneProfile
-monkey_generator_feature_vibrate_has = vibrate
+# monkey_generator_feature_tone_profile_min_ciq = 3.1.0
+# monkey_generator_feature_tone_profile_has = ToneProfile
+# monkey_generator_feature_vibrate_has = vibrate
 
-monkey_generator_register = ciq_api;features
+# monkey_generator_register = ciq_api;features
 
-monkey_generator_used_ciq_versions = 2.4.0;3.1.0
+# monkey_generator_used_ciq_versions = 2.4.0;3.1.0
 
-# GENERATED 127 devices #
+# GENERATED #
+# excluded 0 devices that are incompatible and are not in manifest.xml: 
+# filtered out 0 incompatible devices by constraints from manifest.xml: 
+# included 129 devices
 
 base.excludeAnnotations=$(base.excludeAnnotations);base
 approachs60.resourcePath=$(approachs60.resourcePath);features/vibrate/settings/10
@@ -57,34 +60,31 @@ descentmk343mm.resourcePath=$(descentmk343mm.resourcePath);features/vibrate/sett
 descentmk343mm.excludeAnnotations=$(descentmk343mm.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 descentmk351mm.resourcePath=$(descentmk351mm.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 descentmk351mm.excludeAnnotations=$(descentmk351mm.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge1030.resourcePath=$(edge1030.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge1030.excludeAnnotations=$(edge1030.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge1030bontrager.resourcePath=$(edge1030bontrager.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge1030bontrager.excludeAnnotations=$(edge1030bontrager.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge1030plus.resourcePath=$(edge1030plus.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge1030plus.excludeAnnotations=$(edge1030plus.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge1040.resourcePath=$(edge1040.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge1040.excludeAnnotations=$(edge1040.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge520plus.resourcePath=$(edge520plus.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge520plus.excludeAnnotations=$(edge520plus.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge530.resourcePath=$(edge530.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge530.excludeAnnotations=$(edge530.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge540.resourcePath=$(edge540.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge540.excludeAnnotations=$(edge540.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge820.resourcePath=$(edge820.resourcePath);features/vibrate/settings/10
-edge820.excludeAnnotations=$(edge820.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
-edge830.resourcePath=$(edge830.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge830.excludeAnnotations=$(edge830.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge840.resourcePath=$(edge840.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edge840.excludeAnnotations=$(edge840.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edge_1000.resourcePath=$(edge_1000.resourcePath);features/vibrate/settings/10
-edge_1000.excludeAnnotations=$(edge_1000.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
-edge_520.resourcePath=$(edge_520.resourcePath);features/vibrate/settings/10
-edge_520.excludeAnnotations=$(edge_520.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
-edgeexplore.resourcePath=$(edgeexplore.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edgeexplore.excludeAnnotations=$(edgeexplore.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-edgeexplore2.resourcePath=$(edgeexplore2.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-edgeexplore2.excludeAnnotations=$(edgeexplore2.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
+edge1030.resourcePath=$(edge1030.resourcePath);features/tone_profile/settings/30
+edge1030.excludeAnnotations=$(edge1030.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge1030bontrager.resourcePath=$(edge1030bontrager.resourcePath);features/tone_profile/settings/30
+edge1030bontrager.excludeAnnotations=$(edge1030bontrager.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge1030plus.resourcePath=$(edge1030plus.resourcePath);features/tone_profile/settings/30
+edge1030plus.excludeAnnotations=$(edge1030plus.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge1040.resourcePath=$(edge1040.resourcePath);features/tone_profile/settings/30
+edge1040.excludeAnnotations=$(edge1040.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge520plus.resourcePath=$(edge520plus.resourcePath);features/tone_profile/settings/30
+edge520plus.excludeAnnotations=$(edge520plus.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge530.resourcePath=$(edge530.resourcePath);features/tone_profile/settings/30
+edge530.excludeAnnotations=$(edge530.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge540.resourcePath=$(edge540.resourcePath);features/tone_profile/settings/30
+edge540.excludeAnnotations=$(edge540.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge820.excludeAnnotations=$(edge820.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
+edge830.resourcePath=$(edge830.resourcePath);features/tone_profile/settings/30
+edge830.excludeAnnotations=$(edge830.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge840.resourcePath=$(edge840.resourcePath);features/tone_profile/settings/30
+edge840.excludeAnnotations=$(edge840.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edge_1000.excludeAnnotations=$(edge_1000.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
+edge_520.excludeAnnotations=$(edge_520.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
+edgeexplore.resourcePath=$(edgeexplore.resourcePath);features/tone_profile/settings/30
+edgeexplore.excludeAnnotations=$(edgeexplore.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+edgeexplore2.resourcePath=$(edgeexplore2.resourcePath);features/tone_profile/settings/30
+edgeexplore2.excludeAnnotations=$(edgeexplore2.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
 enduro.resourcePath=$(enduro.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 enduro.excludeAnnotations=$(enduro.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 epix.resourcePath=$(epix.resourcePath);features/vibrate/settings/10
@@ -141,6 +141,10 @@ fenix7xpronowifi.resourcePath=$(fenix7xpronowifi.resourcePath);features/vibrate/
 fenix7xpronowifi.excludeAnnotations=$(fenix7xpronowifi.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 fenixchronos.resourcePath=$(fenixchronos.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 fenixchronos.excludeAnnotations=$(fenixchronos.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
+fr165.resourcePath=$(fr165.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+fr165.excludeAnnotations=$(fr165.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
+fr165m.resourcePath=$(fr165m.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+fr165m.excludeAnnotations=$(fr165m.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 fr230.resourcePath=$(fr230.resourcePath);features/vibrate/settings/10
 fr230.excludeAnnotations=$(fr230.excludeAnnotations);ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
 fr235.resourcePath=$(fr235.resourcePath);features/vibrate/settings/10
@@ -185,12 +189,10 @@ fr955.resourcePath=$(fr955.resourcePath);features/vibrate/settings/10;features/t
 fr955.excludeAnnotations=$(fr955.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 fr965.resourcePath=$(fr965.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 fr965.excludeAnnotations=$(fr965.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-gpsmap66.resourcePath=$(gpsmap66.resourcePath);features/vibrate/settings/10
-gpsmap66.excludeAnnotations=$(gpsmap66.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
-gpsmap67.resourcePath=$(gpsmap67.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-gpsmap67.excludeAnnotations=$(gpsmap67.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-gpsmap86.resourcePath=$(gpsmap86.resourcePath);features/vibrate/settings/10
-gpsmap86.excludeAnnotations=$(gpsmap86.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
+gpsmap66.excludeAnnotations=$(gpsmap66.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
+gpsmap67.resourcePath=$(gpsmap67.resourcePath);features/tone_profile/settings/30
+gpsmap67.excludeAnnotations=$(gpsmap67.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+gpsmap86.excludeAnnotations=$(gpsmap86.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
 instinct2.resourcePath=$(instinct2.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 instinct2.excludeAnnotations=$(instinct2.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 instinct2s.resourcePath=$(instinct2s.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
@@ -227,12 +229,10 @@ marqexpedition.resourcePath=$(marqexpedition.resourcePath);features/vibrate/sett
 marqexpedition.excludeAnnotations=$(marqexpedition.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
 marqgolfer.resourcePath=$(marqgolfer.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 marqgolfer.excludeAnnotations=$(marqgolfer.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-montana7xx.resourcePath=$(montana7xx.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
-montana7xx.excludeAnnotations=$(montana7xx.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate
-oregon7xx.resourcePath=$(oregon7xx.resourcePath);features/vibrate/settings/10
-oregon7xx.excludeAnnotations=$(oregon7xx.excludeAnnotations);ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
-rino7xx.resourcePath=$(rino7xx.resourcePath);features/vibrate/settings/10
-rino7xx.excludeAnnotations=$(rino7xx.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate
+montana7xx.resourcePath=$(montana7xx.resourcePath);features/tone_profile/settings/30
+montana7xx.excludeAnnotations=$(montana7xx.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate
+oregon7xx.excludeAnnotations=$(oregon7xx.excludeAnnotations);ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
+rino7xx.excludeAnnotations=$(rino7xx.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate
 venu.resourcePath=$(venu.resourcePath);features/vibrate/settings/10
 venu.excludeAnnotations=$(venu.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;tone_profile;no_vibrate
 venu2.resourcePath=$(venu2.resourcePath);features/vibrate/settings/10

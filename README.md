@@ -35,6 +35,8 @@ Tone Profile: "2500,250;5000,250" is equivalent to:
 
 # Changelog
 
+5 (2024-03-25) add fr165, fix vibration detection
+
 4 (2024-02-19) only display settings that are relevant to the device
 
 3 (2024-02-19) fix crash when device doesn't support ToneProfile
