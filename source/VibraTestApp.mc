@@ -19,8 +19,8 @@ class VibraTestApp extends Application.AppBase {
     }
 
     // Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new VibraTestView() ] as Array<Views or InputDelegates>;
+    function getInitialView() as [ WatchUi.Views ] or [ WatchUi.Views, WatchUi.InputDelegates ] {
+        return [ new VibraTestView() ] as [ WatchUi.Views ];
     }
 
     public function onSettingsChanged() as Void {
