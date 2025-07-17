@@ -35,6 +35,8 @@ Tone Profile: "2500,250;5000,250" is equivalent to:
 
 # Changelog
 
+7 (2025-07-17) add edgemtb, fr570, fr970, venux1
+
 6 (2025-04-07) add approachs50, descentg2, edge1050, enduro3, fenix8, fenixe, instinct3, instincte, vivoactive6
 
 5 (2024-03-25) add fr165, fix vibration detection

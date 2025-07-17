@@ -1,4 +1,4 @@
-# GENERATED from 'monkey.template.jungle' by https://github.com/flocsy/garmin-dev-tools/tree/main/monkey-generator/ ©2022-2025 by flocsy
+# GENERATED from 'monkey.template.jungle' by https://github.com/flocsy/garmin-dev-tools/tree/main/monkey-generator/ © by flocsy
 
 project.manifest = manifest.xml
 project.typecheck = 3
@@ -19,7 +19,7 @@ project.optimization = 2z
 # GENERATED #
 # excluded 0 devices that are incompatible and are not in manifest.xml: 
 # filtered out 0 incompatible devices by constraints from manifest.xml: 
-# included 144 devices
+# included 149 devices
 
 base.sourcePath=source
 base.excludeAnnotations=base
@@ -92,6 +92,8 @@ edgeexplore.resourcePath=$(edgeexplore.resourcePath);features/tone_profile/setti
 edgeexplore.excludeAnnotations=$(edgeexplore.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate;no_beta
 edgeexplore2.resourcePath=$(edgeexplore2.resourcePath);features/tone_profile/settings/30
 edgeexplore2.excludeAnnotations=$(edgeexplore2.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate;no_beta
+edgemtb.resourcePath=$(edgemtb.resourcePath);features/tone_profile/settings/30
+edgemtb.excludeAnnotations=$(edgemtb.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate;no_beta
 enduro.resourcePath=$(enduro.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 enduro.excludeAnnotations=$(enduro.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 enduro3.resourcePath=$(enduro3.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
@@ -186,6 +188,10 @@ fr265s.resourcePath=$(fr265s.resourcePath);features/vibrate/settings/10;features
 fr265s.excludeAnnotations=$(fr265s.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 fr55.resourcePath=$(fr55.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 fr55.excludeAnnotations=$(fr55.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
+fr57042mm.resourcePath=$(fr57042mm.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+fr57042mm.excludeAnnotations=$(fr57042mm.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
+fr57047mm.resourcePath=$(fr57047mm.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+fr57047mm.excludeAnnotations=$(fr57047mm.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 fr630.resourcePath=$(fr630.resourcePath);features/vibrate/settings/10
 fr630.excludeAnnotations=$(fr630.excludeAnnotations);ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate;no_beta
 fr645.resourcePath=$(fr645.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
@@ -208,6 +214,8 @@ fr955.resourcePath=$(fr955.resourcePath);features/vibrate/settings/10;features/t
 fr955.excludeAnnotations=$(fr955.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 fr965.resourcePath=$(fr965.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
 fr965.excludeAnnotations=$(fr965.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
+fr970.resourcePath=$(fr970.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+fr970.excludeAnnotations=$(fr970.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 gpsmap66.excludeAnnotations=$(gpsmap66.excludeAnnotations);no_ciq_2_4_0;ciq_3_1_0;tone_profile;vibrate;no_beta
 gpsmap67.resourcePath=$(gpsmap67.resourcePath);features/tone_profile/settings/30
 gpsmap67.excludeAnnotations=$(gpsmap67.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;vibrate;no_beta
@@ -284,6 +292,8 @@ venusq2m.resourcePath=$(venusq2m.resourcePath);features/vibrate/settings/10
 venusq2m.excludeAnnotations=$(venusq2m.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;tone_profile;no_vibrate;no_beta
 venusqm.resourcePath=$(venusqm.resourcePath);features/vibrate/settings/10
 venusqm.excludeAnnotations=$(venusqm.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;tone_profile;no_vibrate;no_beta
+venux1.resourcePath=$(venux1.resourcePath);features/vibrate/settings/10;features/tone_profile/settings/30
+venux1.excludeAnnotations=$(venux1.excludeAnnotations);no_ciq_2_4_0;no_ciq_3_1_0;no_tone_profile;no_vibrate;no_beta
 vivoactive.resourcePath=$(vivoactive.resourcePath);features/vibrate/settings/10
 vivoactive.excludeAnnotations=$(vivoactive.excludeAnnotations);ciq_2_4_0;ciq_3_1_0;tone_profile;no_vibrate;no_beta
 vivoactive3.resourcePath=$(vivoactive3.resourcePath);features/vibrate/settings/10
